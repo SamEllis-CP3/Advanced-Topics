@@ -3,7 +3,7 @@ from csv import reader
 
 apps=[]
 
-with open('applist.csv') as csv_file:
+with open('app_list.csv') as csv_file:
     csv_reader = reader(csv_file, delimiter=',')
     next(csv_reader)
     for name, description, category in csv_reader:
